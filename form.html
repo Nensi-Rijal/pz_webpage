@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset='utf-8'>
+			<!--linking css-->
+	<link rel='stylesheet' type='text/css' media='screen' href='./css/style.css'>
+    <title>PEACE ZONE</title>
+    <style>
+        #G-form {
+            margin-top: 30px;
+            margin-right: 200px;
+            margin-left: 200px;
+            text-align: center;
+            font-size: 20px;
+            font-family: 'Trispace', sans-serif;
+        }
+        h3{
+            font-family: 'Trispace', sans-serif;
+        }
+    </style>
+    <script type="text/javascript">
+
+
+        function validateform() {
+           if (document.forms[0].fname.value == '') {
+               alert('FILL FIRST NAME');
+               return false;
+           }
+
+           if (document.forms[0].lname.value == '') {
+               alert('FILL  LAST NAME');
+               return false;
+           }
+
+           if (document.forms[0].number.value == '') {
+               alert('PLEASE PROVIDE YOUR CONTACT NUMBER');
+               return false;
+           }
+           if (document.forms[0].address.value == '') {
+               alert('FILL IN YOUR ADDRESS');
+               return false;
+           }
+           if (document.forms[0].sfname.value == '') {
+               alert('FILL FIRST NAME');
+               return false;
+           }
+
+           if (document.forms[0].slname.value == '') {
+               alert('FILL  LAST NAME');
+               return false;
+           }
+           if (document.forms[0].ID.value == ''){
+            alert("FILL STUDENT ID")
+            return false;
+           }
+           if(document.forms[0].birth.value == ''){
+            alert("FILL BIRTH DATE")
+            return false;
+           }
+           if(document.forms[0].class.value == ''){
+            alert("CHOOSE GRADE")
+            return false;
+           }         
+}
+    </script>
+</head>
+<body>
+    <header>
+        <!--logo-->
+        <img src="./images/logo/logo.jpg" id="logo" alt="school logo" />
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="galleri.html" target="_blank">Gallery</a></li>
+            </ul>
+        </nav>
+        <!--button-->
+        <a href="form.html" target="_blank" class="button">Form</a>
+    </header>
+    <br>
+    <h2 style="margin-top: 100px; text-align: center; font-family: 'Roboto Condensed', sans-serif;">To Know the School performance  of your children, please fill up the form</h2>
+    <form onsubmit="return validateform();">
+        <div id="G-form">
+            <fieldset>
+                <h3>This section is to be filled by the Guardians</h3>
+                <label>First Name:</label>&nbsp;&nbsp;<input type="text" name="fname" id="fname"> <br><br>
+                <label>Last Name:</label>&nbsp;&nbsp;<input type="text" name="lname" id="lname"> <br><br>
+                <label>Contact No:</label>&nbsp;<input type="text" name="number" id="number"><br><br>
+                <label>Address:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="address">
+            </fieldset>
+            <fieldset>
+                <h3>Please fill your children detail</h3>
+                <label>First Name:</label>&nbsp;<input type="text" name="sfname" id="sfname"><br><br>
+                <label>Last Name:</label>&nbsp;<input type="text" name="slname" id="slname"><br><br>
+                <label>Student ID:</label>&nbsp;<input type="text" name="ID" id="ID"><br><br>
+                <label>Date Of Birth:</label>&nbsp;<input type="date" name="birth" id="birth"><br><br>
+                <label for="class">Select Class:</label>
+                <select name="class" id="class" style="font-size: 15px;font-family: 'Syne Tactile', cursive;">
+                    <option value="pg">Play-Group</option><option value=kg1>KG-I</option>
+                    <option value=kg2>KG-II</option><option value="G1">Grade-1</option>
+                    <option value="G2">Grade-2</option><option value="G3">Grade-3</option>
+                    <option value="G4">Grade-4</option><option value="G5">Grade-5</option>
+                    <option value="G6">Grade-6</option><option value="G7">Grade-7</option>
+                    <option value="G8">Grade-8</option><option value="G9">Grade-9</option>
+                    <option value="G10">Grade-10</option><option value="G11">Grade-11</option>
+                    <option value="G12">Grade-12</option>
+                </select><br><br>
+                <button style="font-size: 15px;font-family: 'Syne Tactile', cursive;">
+                    Submit
+                </button>
+            </fieldset>
+        </div>
+    </form>
+    <footer>
+		<div id="about">
+		  <p>Address: Itahari-6, Sunsari</p>
+		  <p>Tel: 025-580068</p>
+		  <p>Email: schoolpeacezone3@gmail.com</p>
+		</div>
+		<div >
+		  <marquee id="copy">&copy; copyright 2020</marquee>
+		</div>
+	</footer>
+</body>
+</html>

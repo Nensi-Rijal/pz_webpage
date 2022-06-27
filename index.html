@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset='utf-8'>
+			<!--linking css-->
+	<link rel='stylesheet' type='text/css' media='screen' href='./css/style.css'>
+	<title>PEACE ZONE</title>
+	<script>
+        var images = ['./images/slideshow/school.jpg',
+                      './images/slideshow/teacher.jpg',
+                      './images/slideshow/2.jpg',
+                      './images/slideshow/3.jpg',
+                      './images/slideshow/1.jpg',
+                      './images/slideshow/4.jpg',
+                      './images/slideshow/5.jpg',
+                      './images/slideshow/6.jpg',
+                      './images/slideshow/7.jpg',
+                      './images/slideshow/8.jpg',
+                      './images/slideshow/9.jpg',
+                      './images/slideshow/12.jpg',
+                      './images/slideshow/14.jpg'
+        				];
+        var i = 0;
+        function slides() 
+		{
+            document.getElementById("three").src = images[i];
+            if(i<(images.length-1)) 
+            	i++;
+            else 
+            	i = 0;
+        }
+        setInterval (slides, 2000);
+    </script>
+</head>
+<body class="container">
+	 <div class="welcome">
+		WELCOME TO PEACE ZONE SCHOOL WEB PAGE
+	</div>
+			<!--header-->
+	<header>
+			<!--logo-->
+		<img src="./images/logo/logo.jpg" id="logo" alt="school logo" />
+		<nav>
+			<ul>
+				<li><a href="home.html">Home</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="galleri.html" target="_blank">Gallery</a></li>
+			</ul>
+		</nav>
+			<!--button-->
+		<a href="form.html" target="_blank" class="button">Form</a>
+	</header>
+			<!--slideshow part-->
+	<div class="main">
+		<img src="./images/slideshow/school.jpg" id="three" alt="Peace Zone School" />
+		<br>
+		<hr style="box-shadow: 0 0 10px black;">
+	</div>
+	<div class="galleri" style="border: 2px solid silver; width: 1000px; margin-left: 250px; padding-top: 20px; background-color: rgb(7, 77, 100);">
+		<div id="images1">
+			<a href="galleri.html#parents " target="#parents"><img src="./images/class4/g.jpg" alt="Parents with us" class="pic" style="height: 350px; width: 460px;"><h3>Parents with us of class4</h3></a>
+			<a href="galleri.html#birthday" target="#birthday"><img src="./images/birthday/1.jpg" alt="Teachers birthday celebration" class="pic" style="height: 350px; width: 300px"><h3>Teachers birthdays celebration</h3></a>
+		</div> 
+		<br>
+		<div id="images2">
+			<a href="galleri.html#other" target="_blank"><img src="./images/others/1.jpg" class="pic" alt="Others" style="height: 350px"><h3>Others</h3></a>
+			<a href="galleri.html#more" target="_blank"><h2 class="pic" style="border: 2px solid blue; height: 170px; padding-top: 150px; background-color: silver; color: blueviolet; border-radius: 30px;">Click here for more pictures</h2></a>
+		</div>
+	</div>
+	<div class="quotes">
+		<p style="padding: 2px; font-size: 20px; font-family: 'Syne Tactile', cursive; text-align: center;">“Teachers open the door, but you must enter by yourself” – Chinese Proverb</p>
+	</div>
+	<footer>
+		<div id="about">
+		  <p>Address: Itahari-6, Sunsari</p>
+		  <p>Tel: 025-580068</p>
+		  <p>Email: schoolpeacezone3@gmail.com</p>
+		</div>
+		<div >
+		  <marquee id="copy">&copy; copyright 2020</marquee>
+		</div>
+	</footer>
+</body>
+</html>
